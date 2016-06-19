@@ -16,8 +16,8 @@ describe('log-ok', function() {
     var count = 0;
 
     console.log = function(str, msg) {
-      assert.equal(str, green(check));
       console.log = log;
+      assert.equal(str, green(check));
       count++;
     };
 
@@ -30,8 +30,8 @@ describe('log-ok', function() {
     var count = 0;
 
     console.log = function(str, msg) {
-      assert.equal(str, '    ' + green(check));
       console.log = log;
+      assert.equal(str, '    ' + green(check));
       count++;
     };
 
