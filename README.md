@@ -20,7 +20,17 @@ ok('success!');
 
 Results in:
 
-![log-ok example](example.png)
+![log-ok example](log-example.png)
+
+Respects leading whitespace, so:
+
+```js
+ok('    success!');
+```
+
+Results in:
+
+![log-ok example whitespace](log-whitespace.png)
 
 ## Related projects
 

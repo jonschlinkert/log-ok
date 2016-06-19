@@ -14,6 +14,7 @@ describe('log-ok', function() {
   it('should export an object', function() {
     var log = console.log;
     var count = 0;
+
     console.log = function(str, msg) {
       assert.equal(str, green(check));
       console.log = log;
@@ -21,6 +22,20 @@ describe('log-ok', function() {
     };
 
     ok('foo');
+    assert.equal(count, 1);
+  });
+
+  it('should respect leading whitespace', function() {
+    var log = console.log;
+    var count = 0;
+
+    console.log = function(str, msg) {
+      assert.equal(str, '    ' + green(check));
+      console.log = log;
+      count++;
+    };
+
+    ok('    foo');
     assert.equal(count, 1);
   });
 });
