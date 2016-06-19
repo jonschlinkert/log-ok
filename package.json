@@ -1,7 +1,7 @@
 {
   "name": "log-ok",
   "description": "just `console.log` prefixed with a green check",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/log-ok",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/log-ok",
@@ -24,8 +24,8 @@
     "success-symbol": "^0.1.0"
   },
   "devDependencies": {
-    "gulp-format-md": "*",
-    "mocha": "*"
+    "gulp-format-md": "^0.1.9",
+    "mocha": "^2.5.3"
   },
   "keywords": [
     "log",
