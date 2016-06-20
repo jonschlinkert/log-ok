@@ -20,7 +20,7 @@ ok('success!');
 
 Results in:
 
-![log-ok example](log-example.png)
+![log-ok example](example.png)
 
 Respects leading whitespace, so:
 
@@ -30,7 +30,7 @@ ok('    success!');
 
 Results in:
 
-![log-ok example whitespace](log-whitespace.png)
+![log-ok example whitespace](example-indented.png)
 
 ## Related projects
 
